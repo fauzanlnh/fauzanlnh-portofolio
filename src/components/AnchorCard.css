@@ -1,0 +1,5 @@
+.hover-card:hover {
+  border-color: lightgray; /* Change the border color on hover */
+  background-color: #f8f9fa; /* Change the background color on hover */
+  /* Add any additional styles you want for the hover effect */
+}
