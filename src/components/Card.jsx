@@ -12,6 +12,7 @@ export default function Card(props) {
     img: PropTypes.string,
     target: PropTypes.string,
     btnColor: PropTypes.string,
+    textSize: PropTypes.string,
     children: PropTypes.array,
   };
 
@@ -20,6 +21,18 @@ export default function Card(props) {
     backgroundColor: props.backgroundColor,
     color: props.textColor,
   };
+
+  const descriptionStyle = {
+    // maxHeight: "3.5em", // Set a fixed height for three lines
+    // overflow: "hidden",
+    // textOverflow: "ellipsis",
+    // lineHeight: "1.2em", // Control the line height
+    display: "-webkit-box",
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    WebkitLineClamp: 3, // Number of lines to show before ellipsis
+  };
   // w"18rem"
   return (
     <div className="card" style={style}>
@@ -27,9 +40,11 @@ export default function Card(props) {
         <h5 className={`card-title ${props.textAlign} ${props.textSize} `}>
           {props.title}
         </h5>
-        <p className={`card-text ${props.textAlign}`}>{props.description}</p>
+        <p className={`card-text text-start `} style={descriptionStyle}>
+          {props.description}
+        </p>
         {props.img && (
-          <img className="card-img-top" src={props.img} alt="Card image cap" />
+          <img className="card-img-top" src={props.img} alt={props.title} />
         )}
         <div className="row">{props.children}</div>
         <div className="row mt-2">

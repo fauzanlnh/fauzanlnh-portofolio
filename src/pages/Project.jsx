@@ -7,10 +7,7 @@ export default function project() {
       <div className="row">
         <p className="fs-1 fw-bold">Freelance Projects</p>
         <p className="fs-5 text-start mt-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam
-          ducimus, in, et quod ut unde saepe reprehenderit perspiciatis dolor
-          officia quis recusandae corporis aut, earum incidunt. Tenetur, quas
-          vel?
+          These are projects that i have created
         </p>
       </div>
       <div className="mt-2 row row-cols-1 row-cols-md-2 g-4">
@@ -18,7 +15,7 @@ export default function project() {
           <div key={index} className="col-12 col-md-4 ">
             <Card
               title={project.title}
-              description={project.description}
+              description={project.descriptionEng}
               backgroundColor="#4a5567"
               textColor="white"
               textAlign="text-center"
@@ -34,10 +31,7 @@ export default function project() {
       <div className="row mt-2">
         <p className="fs-1 fw-bold">Open Source Projects</p>
         <p className="fs-5 text-start mt-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam
-          ducimus, in, et quod ut unde saepe reprehenderit perspiciatis dolor
-          officia quis recusandae corporis aut, earum incidunt. Tenetur, quas
-          vel?
+          This is a project I created and can be accessed via github
         </p>
       </div>
       <div className="mt-2 row row-cols-1 row-cols-md-2 g-4">
@@ -45,7 +39,7 @@ export default function project() {
           <div key={index} className="col-12 col-md-4 ">
             <Card
               title={project.title}
-              description={project.description}
+              description={project.descriptionEng}
               link={project.link}
               backgroundColor="#4a5567"
               textColor="white"
@@ -53,6 +47,7 @@ export default function project() {
               textAlign="text-center"
               target="_blank"
               btnColor="btn-dark btn-outline-light"
+              textSize="h6"
             />
           </div>
         ))}

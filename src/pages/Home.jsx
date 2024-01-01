@@ -7,11 +7,14 @@ export default function Home() {
     <div>
       <div className="row">
         <div className="col-7 mt-5">
-          <p className="fs-1 fw-bold">Hi, I`m Fauzan Lukmanul Hakim.</p>
+          <p className="fs-1 fw-bold">Fauzan Lukmanul Hakim.</p>
+          <p className="fs-3 text-start mt-2">
+            Software engineer specialized in backend development
+          </p>
           <p className="fs-5 text-start mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            quia quas voluptas mollitia officia vitae, vel doloribus blanditiis
-            reprehenderit ab ut dignissimos. Magnam, sit eum.
+            I have a passion in the field of backend development, but recently,
+            i have an interest in frontend development, especially react.
+            Currently, I am seeking for job opportunities
           </p>
         </div>
         {/* mt-md-3 meant div has margin-top 3 when screen is md or bigger */}
@@ -36,7 +39,7 @@ export default function Home() {
               <div key={index} className="col-12 col-md-6 mt-1 mt-md-0">
                 <Card
                   title={project.title}
-                  description={project.description}
+                  description={project.descriptionEng}
                   link={project.link}
                   backgroundColor="#4a5567"
                   textColor="white"

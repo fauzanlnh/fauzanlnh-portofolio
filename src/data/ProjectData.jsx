@@ -4,36 +4,57 @@ import imgProject2 from "../assets/img/projects/P2-SistemInformasiPerpustakaan.p
 import imgProject3 from "../assets/img/projects/P3-ProgramDiet.png";
 import imgProject4 from "../assets/img/projects/P2-SistemInformasiPerpustakaan.png";
 import imgProject5 from "../assets/img/projects/P5-SPKCabangBaru.png";
-
+// import imgMaintenance from "../assets/img/underMaintenance.jpg";
+import imgMaintenance from "../assets/img/settings.png";
 const ProjectData = [
   {
     image: imgProject1,
-    title: "Consume API",
-    description: "desc 1",
+    title: "Let's Trip",
+    descriptionBahasa:
+      "Situs web yang dikembangkan untuk memberikan rekomendasi tempat liburan di sebuah kota dengan memanfaatkan layanan API, situs ini bertujuan untuk membantu pengguna menemukan destinasi liburan.",
+    descriptionEng: `
+      A website developed to provide vacation destination recommendations in a city by utilizing API services, this site aims to assist users in discovering holiday destinations.`,
     link: "https://github.com/fauzanlnh/Web-S4-PHP-ConsumeAPI",
   },
   {
     image: imgProject2,
-    title: "Sistem Informasi Perpustakaan",
-    description: "desc 1",
+    titleBahasa: "Sistem Informasi Perpustakaan",
+    title: "Library Information System",
+    descriptionBahasa:
+      "Pengembangan sistem informasi perpustakaan yang dirancang untuk meningkatkan efisiensi dan keterampilan manajemen dalam operasi perpustakaan, sistem memberikan solusi terintegrasi untuk pengelolaan koleksi buku, peminjaman, manajemen anggota dan laporan dari peminajaman",
+    descriptionEng:
+      "Development of a library information system designed to enhance efficiency and management skills in library operations. The system provides an integrated solution for managing book collections, loans, member management, and reporting on loans.",
     link: "https://github.com/fauzanlnh/Web-S4-PHP-Native2-Perpustakaan",
   },
   {
     image: imgProject3,
-    title: "Pro Diet",
-    description: "desc 2",
+    title: "Pro Diet (being repaired)",
+    descriptionBahasa:
+      "platform web yang menyediakan rencana diet yang dapat diikuti dan to-do list harian untuk membantu pengguna mencapai tujuan kesehatan dan kebugaran mereka",
+    descriptionEng:
+      "A web platform that provides followable diet plans and daily to-do lists to help users achieve their health and fitness goals.",
     link: "https://github.com/fauzanlnh/web-S4-php-nativeMVC-Pro-Diet",
   },
   {
     image: imgProject4,
-    title: "Sistem Informasi Cafe",
-    description: "desc 3",
+    titleBahasa: "Sistem Informasi Cafe (being repaired)",
+    title: "Cafe Information System (being repaired)",
+    descriptionBahasa:
+      "Proyek pengembangan sistem informasi kafe yang bertujuan untuk meningkatkan efisiensi operasional dan pengalaman pelanggan dalam pengelolaan dan pemesanan di kafe. Sistem ini memberikan solusi terintegrasi untuk manajemen pesanan, stok, dan pelaporan",
+    descriptionEng:
+      "A cafe information system development project aimed at improving operational efficiency and customer experience in cafe management and ordering. This system provides an integrated solution for order management, inventory, and reporting.",
+
     link: "https://github.com/fauzanlnh/Web-S6-Laravel-Cafe",
   },
   {
     image: imgProject5,
-    title: "SIM Pembukaan Cabang Baru",
-    description: "desc 4",
+    titleBahasa: "SIM Pembukaan Cabang Baru",
+    title: "MIS for opening new branches",
+    descriptionBahasa:
+      "Sistem informasi manajemen yang membantu pemilik atau manajer dalam menentukan lokasi terbaik untuk membuka cabang baru dengan menggunakan metode Simple Additive Weighting (SAW).",
+    descriptionEng:
+      "A management information system that assists owners or managers in determining the best location to open a new branch using the Simple Additive Weighting (SAW) method.",
+
     link: "https://github.com/fauzanlnh/S8_CRM_Pembukaan-Cabang-Baru",
   },
 ];
