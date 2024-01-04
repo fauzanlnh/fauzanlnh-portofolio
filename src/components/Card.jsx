@@ -22,6 +22,14 @@ export default function Card(props) {
     color: props.textColor,
   };
 
+  const titleStyle = {
+    display: "-webkit-box",
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    WebkitLineClamp: 1, // Number of lines to show before ellipsis
+  };
+
   const descriptionStyle = {
     // maxHeight: "3.5em", // Set a fixed height for three lines
     // overflow: "hidden",
@@ -33,11 +41,12 @@ export default function Card(props) {
     textOverflow: "ellipsis",
     WebkitLineClamp: 3, // Number of lines to show before ellipsis
   };
+
   // w"18rem"
   return (
     <div className="card" style={style}>
       <div className="card-body">
-        <h5 className={`card-title ${props.textAlign} ${props.textSize} `}>
+        <h5 className={`card-title ${props.textAlign} ${props.textSize} `} style={titleStyle}>
           {props.title}
         </h5>
         <p className={`card-text text-start `} style={descriptionStyle}>
@@ -47,7 +56,7 @@ export default function Card(props) {
           <img className="card-img-top" src={props.img} alt={props.title} />
         )}
         <div className="row">{props.children}</div>
-        <div className="row mt-2">
+        <div className="row mt-3">
           {props.link && (
             <Button
               link={props.link}

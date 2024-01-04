@@ -15,7 +15,7 @@ const ProjectFreelanceData = [
   },
   {
     image: imgProject2,
-    titleBahasa: "Web Organisasi",
+    titleBahasa: "Mapar NB",
     title: "MAPAR NB",
     descriptionBahasa:
       "sebuah aplikasi web yang dirancang untuk mendukung kegiatan dan inisiatif organisasi Mahasiswa Pencinta Alam, web ini bertujuan untuk meningkatkan visibilitas dan keterlibatan anggota terhadap kegiatan yang dilakukan oleh organisasi.",
@@ -24,8 +24,8 @@ const ProjectFreelanceData = [
   },
   {
     image: imgProject3,
-    titleBahasa: "Penjualan Sablon",
-    title: "E-Commerce T-Shirt and Digital Printing",
+    titleBahasa: "Zema Sablon",
+    title: "Zema Sablon",
     descriptionBahasa:
       "sebuah aplikasi web yang menyediakan layanan penjualan kaos serta pemasangan jasa sablon secara online. Situs ini bertujuan untuk memberikan kemudahan bagi pelanggan dalam melakukan pemesanan dan menyediakan sistem informasi terintegrasi untuk pemilik atau pegawai.",
     descriptionEng:

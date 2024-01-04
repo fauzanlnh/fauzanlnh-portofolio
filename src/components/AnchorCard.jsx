@@ -19,18 +19,18 @@ export default function AnchorCard(props) {
           style={{ "max-width": "540p" }}
         >
           <div className="row g-0">
-            <div className="col-md-2 d-flex align-items-center justify-content-center">
+            <div className="col-2  d-flex align-items-center justify-content-center">
               <span
                 className={props.icon}
                 style={{ fontSize: "1.8rem" }}
               ></span>
             </div>
-            <div className="col-md-8 d-flex align-items-center mt-2">
-              <div className="card-body ">
-                <h5 className="card-title ">{props.textButton}</h5>
+            <div className="col-8  d-flex align-items-center ">
+              <div className="card-body">
+                <h5 className="card-title text-center">{props.textButton}</h5>
               </div>
             </div>
-            <div className="col-md-2 d-flex align-items-center justify-content-center">
+            <div className="col-2 d-flex align-items-center justify-content-center">
               <span
                 className="bi bi-arrow-up-right"
                 style={{ fontSize: "1.8rem" }}
